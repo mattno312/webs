@@ -1,0 +1,108 @@
+html {
+  background-image: url("./media/lines.png");
+  min-height: 666px;
+  background-size: cover;
+}
+
+.seize {
+  height: 660px;
+  width: 606px;
+  -webkit-animation-name: seas;
+  animation-name: seas;
+  -webkit-animation-duration: 66.6ms;
+  animation-duration: 66.6ms;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+@-webkit-keyframes seas {
+  0% {
+    -webkit-transform: scale(0.4) rotateX(180deg) rotateZ(-12deg);
+    transform: scale(0.4) rotateX(180deg) rotateZ(-12deg);
+  }
+  25% {
+    -webkit-transform: scale(1) rotateZ(47deg) rotateX(20deg);
+    transform: scale(1) rotateZ(47deg) rotateX(20deg);
+  }
+  50% {
+    -webkit-transform: scale(0.2) rotateZ(-97deg) rotateX(200deg);
+    transform: scale(0.2) rotateZ(-97deg) rotateX(200deg);
+  }
+  75% {
+    -webkit-transform: scale(0.6) rotateZ(-37deg) rotateX(18deg);
+    transform: scale(0.6) rotateZ(-37deg) rotateX(18deg);
+  }
+  100% {
+    -webkit-transform: scale(0.1) rotateY(15deg);
+    transform: scale(0.1) rotateY(15deg);
+  }
+}
+@keyframes seas {
+  0% {
+    -webkit-transform: scale(0.4) rotateX(180deg) rotateZ(-12deg);
+    transform: scale(0.4) rotateX(180deg) rotateZ(-12deg);
+  }
+  25% {
+    -webkit-transform: scale(1) rotateZ(47deg) rotateX(20deg);
+    transform: scale(1) rotateZ(47deg) rotateX(20deg);
+  }
+  50% {
+    -webkit-transform: scale(0.2) rotateZ(-97deg) rotateX(200deg);
+    transform: scale(0.2) rotateZ(-97deg) rotateX(200deg);
+  }
+  75% {
+    -webkit-transform: scale(0.6) rotateZ(-37deg) rotateX(18deg);
+    transform: scale(0.6) rotateZ(-37deg) rotateX(18deg);
+  }
+  100% {
+    -webkit-transform: scale(0.1) rotateY(15deg);
+    transform: scale(0.1) rotateY(15deg);
+  }
+}
+.morph {
+  height: 100px;
+  width: 150px;
+  border-radius: 6%;
+  margin: 0 auto;
+  background-color: none;
+  -webkit-animation-name: stretch;
+  animation-name: stretch;
+  -webkit-animation-duration: 0.9s;
+  animation-duration: 0.9s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+= @keyframes stretch {
+  0% {
+    border-radius: 100;
+    -webkit-transform: scale(0.1) scaleZ(0.7) rotateX(7deg) rotateY(7deg)
+      rotateZ(77deg) translateZ(14px);
+    transform: scale(0.1) scaleZ(0.7) rotateX(7deg) rotateY(7deg) rotateZ(77deg)
+      translateZ(14px);
+  }
+  100% {
+    -webkit-transform: scale(1.5) scaleZ(0.6) rotateX(100deg) rotateY(18deg)
+      rotateZ(66deg) translateZ(200px) skew(40deg, 40deg);
+    transform: scale(1.5) scaleZ(0.6) rotateX(100deg) rotateY(18deg)
+      rotateZ(66deg) translateZ(200px) skew(40deg, 40deg);
+  }
+}
